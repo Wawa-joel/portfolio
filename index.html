@@ -13,87 +13,87 @@
             theme: {
                 extend: {
                     colors: {
-                        brandDark: '#090d16',
-                        brandCard: '#111827',
+                        cleanBg: '#ffffff',
+                        cleanCard: '#f8fafc',
                         brandBlue: '#2563eb',
-                        brandAccent: '#38bdf8'
+                        brandDark: '#0f172a'
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="bg-brandDark text-slate-100 font-sans antialiased selection:bg-brandBlue selection:text-white">
+<body class="bg-cleanBg text-slate-800 font-sans antialiased selection:bg-brandBlue selection:text-white">
 
     <!-- Top Navigation Header -->
-    <header class="fixed top-0 left-0 w-full bg-brandDark/90 backdrop-blur-md border-b border-slate-800 z-50 transition-all">
+    <header class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md border-b border-slate-200 z-50 transition-all">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="text-xl font-extrabold tracking-tight text-white flex items-center gap-2">
+            <a href="#" class="text-xl font-extrabold tracking-tight text-slate-900 flex items-center gap-2">
                 <span class="w-3 h-3 bg-brandBlue rounded-full inline-block"></span> Joel Wafula
             </a>
             
             <!-- Desktop Nav Menu -->
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
-                <a href="#about" class="hover:text-brandAccent transition-colors">About</a>
-                <a href="#education" class="hover:text-brandAccent transition-colors">Education</a>
-                <a href="#experience" class="hover:text-brandAccent transition-colors">Experience</a>
-                <a href="#skills" class="hover:text-brandAccent transition-colors">Skills</a>
-                <a href="#hobbies" class="hover:text-brandAccent transition-colors">Hobbies</a>
-                <a href="#referees" class="hover:text-brandAccent transition-colors">Referees</a>
-                <a href="#contact" class="hover:text-brandAccent transition-colors">Contact</a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+                <a href="#about" class="hover:text-brandBlue transition-colors">About</a>
+                <a href="#education" class="hover:text-brandBlue transition-colors">Education</a>
+                <a href="#experience" class="hover:text-brandBlue transition-colors">Experience</a>
+                <a href="#skills" class="hover:text-brandBlue transition-colors">Skills</a>
+                <a href="#hobbies" class="hover:text-brandBlue transition-colors">Hobbies</a>
+                <a href="#referees" class="hover:text-brandBlue transition-colors">Referees</a>
+                <a href="#contact" class="hover:text-brandBlue transition-colors">Contact</a>
             </nav>
 
-            <a href="#contact" class="hidden lg:inline-block bg-brandBlue hover:bg-blue-600 text-white px-5 py-2.5 rounded-xl text-sm font-semibold shadow-lg shadow-blue-500/20 transition-all">
+            <a href="#contact" class="hidden lg:inline-block bg-brandBlue hover:bg-blue-700 text-white px-5 py-2.5 rounded-xl text-sm font-semibold shadow-lg shadow-blue-500/20 transition-all">
                 Hire Me
             </a>
 
             <!-- Mobile Menu Trigger -->
-            <button id="menu-btn" class="md:hidden text-slate-300 focus:outline-none text-2xl">
+            <button id="menu-btn" class="md:hidden text-slate-700 focus:outline-none text-2xl">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
 
         <!-- Mobile Drawer Menu -->
-        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-brandCard border-b border-slate-800 py-6 px-6 flex flex-col space-y-4 shadow-2xl">
-            <a href="#about" class="mobile-link text-slate-300 hover:text-brandAccent font-medium">About</a>
-            <a href="#education" class="mobile-link text-slate-300 hover:text-brandAccent font-medium">Education</a>
-            <a href="#experience" class="mobile-link text-slate-300 hover:text-brandAccent font-medium">Experience</a>
-            <a href="#skills" class="mobile-link text-slate-300 hover:text-brandAccent font-medium">Skills</a>
-            <a href="#hobbies" class="mobile-link text-slate-300 hover:text-brandAccent font-medium">Hobbies</a>
-            <a href="#referees" class="mobile-link text-slate-300 hover:text-brandAccent font-medium">Referees</a>
-            <a href="#contact" class="mobile-link text-slate-300 hover:text-brandAccent font-medium">Contact</a>
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white border-b border-slate-200 py-6 px-6 flex flex-col space-y-4 shadow-xl">
+            <a href="#about" class="mobile-link text-slate-700 hover:text-brandBlue font-semibold">About</a>
+            <a href="#education" class="mobile-link text-slate-700 hover:text-brandBlue font-semibold">Education</a>
+            <a href="#experience" class="mobile-link text-slate-700 hover:text-brandBlue font-semibold">Experience</a>
+            <a href="#skills" class="mobile-link text-slate-700 hover:text-brandBlue font-semibold">Skills</a>
+            <a href="#hobbies" class="mobile-link text-slate-700 hover:text-brandBlue font-semibold">Hobbies</a>
+            <a href="#referees" class="mobile-link text-slate-700 hover:text-brandBlue font-semibold">Referees</a>
+            <a href="#contact" class="mobile-link text-slate-700 hover:text-brandBlue font-semibold">Contact</a>
         </div>
     </header>
 
     <!-- Hero Section with Profile Element -->
-    <section class="pt-36 pb-20 md:pt-44 md:pb-32 bg-gradient-to-b from-slate-900 via-brandDark to-brandDark relative overflow-hidden">
+    <section class="pt-36 pb-20 md:pt-44 md:pb-32 bg-gradient-to-b from-slate-50 via-white to-white relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-12">
             
             <!-- Profile Image Simulation Box -->
-            <div class="w-48 h-48 md:w-64 md:h-64 rounded-3xl overflow-hidden shadow-2xl border-2 border-slate-700 bg-slate-800 flex-shrink-0 relative group flex items-center justify-center">
-                <div class="absolute inset-0 bg-gradient-to-tr from-brandBlue/20 to-transparent"></div>
-                <div class="flex flex-col items-center text-slate-400 z-10">
-                    <i class="fa-solid fa-user-tie text-6xl mb-3 text-brandAccent"></i>
-                    <span class="text-xs tracking-wider uppercase font-bold text-slate-300">Wanyonyi Joel</span>
+            <div class="w-48 h-48 md:w-64 md:h-64 rounded-3xl overflow-hidden shadow-2xl border-2 border-slate-200 bg-slate-100 flex-shrink-0 relative group flex items-center justify-center">
+                <div class="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-transparent"></div>
+                <div class="flex flex-col items-center text-slate-500 z-10">
+                    <i class="fa-solid fa-user-tie text-6xl mb-3 text-brandBlue"></i>
+                    <span class="text-xs tracking-wider uppercase font-bold text-slate-700">Wanyonyi Joel</span>
                 </div>
             </div>
 
             <!-- Hero Intro Details -->
             <div class="text-center md:text-left flex-1">
-                <div class="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 text-brandAccent px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-6">
+                <div class="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 text-brandBlue px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-6">
                     <i class="fa-solid fa-graduation-cap"></i> Computational Linguistics Specialist
                 </div>
-                <h1 class="text-4xl md:text-6xl font-black tracking-tight text-white mb-4">
+                <h1 class="text-4xl md:text-6xl font-black tracking-tight text-slate-900 mb-4">
                     Wanyonyi Joel Wafula
                 </h1>
-                <p class="text-base md:text-lg text-slate-300 max-w-2xl mb-8 leading-relaxed">
-                    Versatile professional with a Bachelor of Arts in English and Literature (Kisii University, Second Class Upper Division), currently pursuing a Master's in Linguistics. Experienced across education, administration, broadcasting, and IT roles.
+                <p class="text-base md:text-lg text-slate-600 max-w-2xl mb-8 leading-relaxed">
+                    Versatile professional with a Bachelor of Arts in English and Literature[cite: 1] (Kisii University, Second Class Upper Division[cite: 1]), currently pursuing a Master's in Linguistics[cite: 1]. Experienced across education, administration, broadcasting, and IT roles[cite: 1].
                 </p>
                 <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                    <a href="#contact" class="bg-brandBlue hover:bg-blue-600 text-white font-semibold px-7 py-3.5 rounded-xl shadow-lg shadow-blue-600/30 transition-all flex items-center gap-2">
+                    <a href="#contact" class="bg-brandBlue hover:bg-blue-700 text-white font-semibold px-7 py-3.5 rounded-xl shadow-lg shadow-blue-600/30 transition-all flex items-center gap-2">
                         <i class="fa-solid fa-envelope"></i> Get in Touch
                     </a>
-                    <a href="#about" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-semibold px-7 py-3.5 rounded-xl transition-all flex items-center gap-2">
+                    <a href="#about" class="bg-slate-100 hover:bg-slate-200 border border-slate-300 text-slate-700 font-semibold px-7 py-3.5 rounded-xl transition-all flex items-center gap-2">
                         <i class="fa-solid fa-circle-info"></i> View Profile
                     </a>
                 </div>
@@ -103,156 +103,156 @@
     </section>
 
     <!-- Professional Profile / About Section -->
-    <section id="about" class="py-24 max-w-7xl mx-auto px-6 border-t border-slate-800/80">
+    <section id="about" class="py-24 max-w-7xl mx-auto px-6 border-t border-slate-200">
         <div class="text-center max-w-3xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold tracking-tight text-white mb-4">Personal Profile</h2>
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-4">Personal Profile</h2>
             <div class="w-16 h-1 bg-brandBlue mx-auto rounded-full mb-6"></div>
-            <p class="text-slate-400 text-base leading-relaxed">
-                I am a versatile professional with a Bachelor of Arts in English and Literature, specializing in Computational Linguistics, and a diverse work experience across customer care, secretarial, receptionist, and IT roles. My strong communication, problem-solving, and organizational skills enable me to manage tasks efficiently, provide exceptional customer service, and support administrative functions.
+            <p class="text-slate-600 text-base leading-relaxed">
+                I am a versatile professional with a Bachelor of Arts in English and Literature, specializing in Computational Linguistics, and a diverse work experience across customer care, secretarial, receptionist, and IT roles. My strong communication, problem-solving, and organizational skills enable me to manage tasks efficiently, provide exceptional customer service, and support administrative functions[cite: 1].
             </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-brandCard p-8 rounded-2xl border border-slate-800 hover:border-slate-700 transition-all">
-                <div class="w-12 h-12 bg-blue-500/10 text-brandAccent rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
+            <div class="bg-cleanCard p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
+                <div class="w-12 h-12 bg-blue-50 text-brandBlue rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
                     <i class="fa-solid fa-book-bookmark"></i>
                 </div>
-                <h3 class="text-xl font-bold text-white mb-3">Academic Foundation</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">
-                    Advanced linguistic studies combined with deep competencies in instructional delivery aligned with Competence-Based Education (CBE) principles.
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Academic Foundation</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Advanced linguistic studies combined with deep competencies in instructional delivery aligned with Competence-Based Education (CBE) principles[cite: 1].
                 </p>
             </div>
 
-            <div class="bg-brandCard p-8 rounded-2xl border border-slate-800 hover:border-slate-700 transition-all">
-                <div class="w-12 h-12 bg-blue-500/10 text-brandAccent rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
+            <div class="bg-cleanCard p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
+                <div class="w-12 h-12 bg-blue-50 text-brandBlue rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
                     <i class="fa-solid fa-chart-line"></i>
                 </div>
-                <h3 class="text-xl font-bold text-white mb-3">Operational Support</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">
-                    Assisted lecturers in curriculum delivery, designed engaging lesson plans, customized teaching materials, and implemented interactive learning strategies.
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Operational Support</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Assisted lecturers in curriculum delivery, designed engaging lesson plans, customized teaching materials, and implemented interactive learning strategies[cite: 1].
                 </p>
             </div>
 
-            <div class="bg-brandCard p-8 rounded-2xl border border-slate-800 hover:border-slate-700 transition-all">
-                <div class="w-12 h-12 bg-blue-500/10 text-brandAccent rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
+            <div class="bg-cleanCard p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
+                <div class="w-12 h-12 bg-blue-50 text-brandBlue rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
                     <i class="fa-solid fa-people-arrows"></i>
                 </div>
-                <h3 class="text-xl font-bold text-white mb-3">Dynamic Execution</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">
-                    With a keen eye for detail and proactive approach, I thrive in dynamic environments, ensuring smooth administrative operations and positive client experiences.
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Dynamic Execution</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    With a keen eye for detail and proactive approach, I thrive in dynamic environments, ensuring smooth administrative operations and positive client experiences[cite: 1].
                 </p>
             </div>
         </div>
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="py-24 bg-slate-900/50 border-t border-slate-800/80">
+    <section id="education" class="py-24 bg-slate-50 border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold tracking-tight text-white mb-4">Educational History</h2>
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-4">Educational History</h2>
                 <div class="w-16 h-1 bg-brandBlue mx-auto rounded-full"></div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                <div class="bg-brandCard p-8 rounded-2xl border border-slate-800 relative">
-                    <span class="absolute top-6 right-6 bg-blue-500/10 text-brandAccent text-xs font-bold px-3 py-1 rounded-full">2025 Sept to Date</span>
-                    <h3 class="text-xl font-bold text-white mb-1">Masters in Linguistics</h3>
-                    <p class="text-brandAccent font-medium text-sm mb-3">Kisii University</p>
-                    <p class="text-slate-400 text-sm">Advanced post-graduate specializations in structural and applied linguistic principles.</p>
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm relative">
+                    <span class="absolute top-6 right-6 bg-blue-50 text-brandBlue text-xs font-bold px-3 py-1 rounded-full">2025 Sept to Date[cite: 1]</span>
+                    <h3 class="text-xl font-bold text-slate-900 mb-1">Masters in Linguistics[cite: 1]</h3>
+                    <p class="text-brandBlue font-semibold text-sm mb-3">Kisii University[cite: 1]</p>
+                    <p class="text-slate-600 text-sm">Advanced post-graduate specializations in structural and applied linguistic principles.</p>
                 </div>
 
-                <div class="bg-brandCard p-8 rounded-2xl border border-slate-800 relative">
-                    <span class="absolute top-6 right-6 bg-blue-500/10 text-brandAccent text-xs font-bold px-3 py-1 rounded-full">2020-2024</span>
-                    <h3 class="text-xl font-bold text-white mb-1">Bachelors of Arts (English, Literature &amp; History)</h3>
-                    <p class="text-brandAccent font-medium text-sm mb-1">Kisii University</p>
-                    <p class="text-slate-300 text-xs font-semibold mb-2">Second Class Upper Division</p>
-                    <p class="text-slate-400 text-sm">Comprehensive multi-disciplinary arts program focusing on modern literary frameworks and computational applications.</p>
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm relative">
+                    <span class="absolute top-6 right-6 bg-blue-50 text-brandBlue text-xs font-bold px-3 py-1 rounded-full">2020-2024[cite: 1]</span>
+                    <h3 class="text-xl font-bold text-slate-900 mb-1">Bachelors of Arts (English, Literature &amp; History)[cite: 1]</h3>
+                    <p class="text-brandBlue font-semibold text-sm mb-1">Kisii University[cite: 1]</p>
+                    <p class="text-slate-700 text-xs font-bold mb-2">Second Class Upper Division[cite: 1]</p>
+                    <p class="text-slate-600 text-sm">Comprehensive multi-disciplinary arts program focusing on modern literary frameworks and computational applications.</p>
                 </div>
 
-                <div class="bg-brandCard p-8 rounded-2xl border border-slate-800 relative">
-                    <span class="absolute top-6 right-6 bg-slate-800 text-slate-300 text-xs font-bold px-3 py-1 rounded-full">2015-2019</span>
-                    <h3 class="text-xl font-bold text-white mb-1">Kenya Certificate of Secondary Education</h3>
-                    <p class="text-slate-400 font-medium text-sm mb-3">Namwela High School</p>
-                    <p class="text-slate-400 text-sm">Foundational secondary education completion.</p>
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm relative">
+                    <span class="absolute top-6 right-6 bg-slate-100 text-slate-700 text-xs font-bold px-3 py-1 rounded-full">2015-2019[cite: 1]</span>
+                    <h3 class="text-xl font-bold text-slate-900 mb-1">Kenya Certificate of Secondary Education[cite: 1]</h3>
+                    <p class="text-slate-600 font-semibold text-sm mb-3">Namwela High School[cite: 1]</p>
+                    <p class="text-slate-600 text-sm">Foundational secondary education completion.</p>
                 </div>
 
-                <div class="bg-brandCard p-8 rounded-2xl border border-slate-800 relative">
-                    <span class="absolute top-6 right-6 bg-slate-800 text-slate-300 text-xs font-bold px-3 py-1 rounded-full">2005-2014</span>
-                    <h3 class="text-xl font-bold text-white mb-1">Kenya Certificate of Primary Education</h3>
-                    <p class="text-slate-400 font-medium text-sm mb-3">Palm Tree Academy Primary</p>
-                    <p class="text-slate-400 text-sm">Primary level education milestone.</p>
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm relative">
+                    <span class="absolute top-6 right-6 bg-slate-100 text-slate-700 text-xs font-bold px-3 py-1 rounded-full">2005-2014[cite: 1]</span>
+                    <h3 class="text-xl font-bold text-slate-900 mb-1">Kenya Certificate of Primary Education[cite: 1]</h3>
+                    <p class="text-slate-600 font-semibold text-sm mb-3">Palm Tree Academy Primary[cite: 1]</p>
+                    <p class="text-slate-600 text-sm">Primary level education milestone.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Work Experience Section -->
-    <section id="experience" class="py-24 max-w-7xl mx-auto px-6 border-t border-slate-800/80">
+    <section id="experience" class="py-24 max-w-7xl mx-auto px-6 border-t border-slate-200">
         <div class="text-center max-w-3xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold tracking-tight text-white mb-4">Work Experience</h2>
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-4">Work Experience</h2>
             <div class="w-16 h-1 bg-brandBlue mx-auto rounded-full"></div>
         </div>
 
         <div class="max-w-4xl mx-auto space-y-8">
-            <div class="bg-brandCard p-8 rounded-2xl border border-slate-800 flex flex-col md:flex-row gap-6">
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col md:flex-row gap-6">
                 <div class="md:w-1/3">
-                    <span class="inline-block bg-blue-500/10 text-brandAccent text-xs font-bold px-3 py-1 rounded-full mb-2">2025 to Date</span>
-                    <h3 class="text-lg font-bold text-white">Teaching</h3>
-                    <p class="text-sm text-slate-400">Olowang mission school</p>
+                    <span class="inline-block bg-blue-50 text-brandBlue text-xs font-bold px-3 py-1 rounded-full mb-2">2025 to Date[cite: 1]</span>
+                    <h3 class="text-lg font-bold text-slate-900">Teaching[cite: 1]</h3>
+                    <p class="text-sm font-semibold text-slate-600">Olowang mission school[cite: 1]</p>
                 </div>
-                <div class="md:w-2/3 border-t md:border-t-0 md:border-l border-slate-800 pt-4 md:pt-0 md:pl-6">
-                    <ul class="space-y-2 text-slate-300 text-sm">
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandAccent mt-1"></i> Dedicated teacher for primary students.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandAccent mt-1"></i> Efficient administrator managing daily operations.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandAccent mt-1"></i> Effective mentor guiding student growth.</li>
+                <div class="md:w-2/3 border-t md:border-t-0 md:border-l border-slate-200 pt-4 md:pt-0 md:pl-6">
+                    <ul class="space-y-2 text-slate-700 text-sm">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Dedicated teacher for primary students[cite: 1].</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Efficient administrator managing daily operations[cite: 1].</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Effective mentor guiding student growth[cite: 1].</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="bg-brandCard p-8 rounded-2xl border border-slate-800 flex flex-col md:flex-row gap-6">
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col md:flex-row gap-6">
                 <div class="md:w-1/3">
-                    <span class="inline-block bg-blue-500/10 text-brandAccent text-xs font-bold px-3 py-1 rounded-full mb-2">Aug-Dec 2024</span>
-                    <h3 class="text-lg font-bold text-white">Teaching CBC</h3>
-                    <p class="text-sm text-slate-400">Kisii University</p>
+                    <span class="inline-block bg-blue-50 text-brandBlue text-xs font-bold px-3 py-1 rounded-full mb-2">Aug-Dec 2024[cite: 1]</span>
+                    <h3 class="text-lg font-bold text-slate-900">Teaching CBC[cite: 1]</h3>
+                    <p class="text-sm font-semibold text-slate-600">Kisii University[cite: 1]</p>
                 </div>
-                <div class="md:w-2/3 border-t md:border-t-0 md:border-l border-slate-800 pt-4 md:pt-0 md:pl-6">
-                    <ul class="space-y-2 text-slate-300 text-sm">
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandAccent mt-1"></i> Assisted in CBC delivery.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandAccent mt-1"></i> Designed engaging lesson plans.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandAccent mt-1"></i> Developed customized teaching materials.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandAccent mt-1"></i> Implemented interactive learning strategies.</li>
+                <div class="md:w-2/3 border-t md:border-t-0 md:border-l border-slate-200 pt-4 md:pt-0 md:pl-6">
+                    <ul class="space-y-2 text-slate-700 text-sm">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Assisted in CBC delivery[cite: 1].</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Designed engaging lesson plans[cite: 1].</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Developed customized teaching materials[cite: 1].</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Implemented interactive learning strategies[cite: 1].</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="bg-brandCard p-8 rounded-2xl border border-slate-800 flex flex-col md:flex-row gap-6">
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col md:flex-row gap-6">
                 <div class="md:w-1/3">
-                    <span class="inline-block bg-blue-500/10 text-brandAccent text-xs font-bold px-3 py-1 rounded-full mb-2">May-Aug 2024</span>
-                    <h3 class="text-lg font-bold text-white">Editor</h3>
-                    <p class="text-sm text-slate-400">Hot TV</p>
+                    <span class="inline-block bg-blue-50 text-brandBlue text-xs font-bold px-3 py-1 rounded-full mb-2">May-Aug 2024[cite: 1]</span>
+                    <h3 class="text-lg font-bold text-slate-900">Editor[cite: 1]</h3>
+                    <p class="text-sm font-semibold text-slate-600">Hot TV[cite: 1]</p>
                 </div>
-                <div class="md:w-2/3 border-t md:border-t-0 md:border-l border-slate-800 pt-4 md:pt-0 md:pl-6">
-                    <ul class="space-y-2 text-slate-300 text-sm">
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandAccent mt-1"></i> Footage Review and Selection.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandAccent mt-1"></i> Typing and editing broadcasts.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandAccent mt-1"></i> Filing.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandAccent mt-1"></i> Video and Audio Editing.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandAccent mt-1"></i> Continuity and Flow Management.</li>
+                <div class="md:w-2/3 border-t md:border-t-0 md:border-l border-slate-200 pt-4 md:pt-0 md:pl-6">
+                    <ul class="space-y-2 text-slate-700 text-sm">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Footage Review and Selection[cite: 1].</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Typing and editing broadcasts[cite: 1].</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Filing[cite: 1].</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Video and Audio Editing[cite: 1].</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Continuity and Flow Management[cite: 1].</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="bg-brandCard p-8 rounded-2xl border border-slate-800 flex flex-col md:flex-row gap-6">
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col md:flex-row gap-6">
                 <div class="md:w-1/3">
-                    <span class="inline-block bg-blue-500/10 text-brandAccent text-xs font-bold px-3 py-1 rounded-full mb-2">May-August 2023</span>
-                    <h3 class="text-lg font-bold text-white">Volunteer Tutor</h3>
-                    <p class="text-sm text-slate-400">Nyanchwa Boys High school</p>
+                    <span class="inline-block bg-blue-50 text-brandBlue text-xs font-bold px-3 py-1 rounded-full mb-2">May-August 2023[cite: 1]</span>
+                    <h3 class="text-lg font-bold text-slate-900">Volunteer Tutor[cite: 1]</h3>
+                    <p class="text-sm font-semibold text-slate-600">Nyanchwa Boys High school[cite: 1]</p>
                 </div>
-                <div class="md:w-2/3 border-t md:border-t-0 md:border-l border-slate-800 pt-4 md:pt-0 md:pl-6">
-                    <ul class="space-y-2 text-slate-300 text-sm">
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandAccent mt-1"></i> Mentored English literature students.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandAccent mt-1"></i> Created effective lesson plans.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandAccent mt-1"></i> Facilitated engaging group discussions.</li>
+                <div class="md:w-2/3 border-t md:border-t-0 md:border-l border-slate-200 pt-4 md:pt-0 md:pl-6">
+                    <ul class="space-y-2 text-slate-700 text-sm">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Mentored English literature students[cite: 1].</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Created effective lesson plans[cite: 1].</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Facilitated engaging group discussions[cite: 1].</li>
                     </ul>
                 </div>
             </div>
@@ -260,44 +260,44 @@
     </section>
 
     <!-- Skills & Hobbies Combined Section -->
-    <section id="skills" class="py-24 bg-slate-900/50 border-t border-slate-800/80">
+    <section id="skills" class="py-24 bg-slate-50 border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16">
             
             <!-- Skills -->
             <div>
                 <div class="mb-10">
-                    <h2 class="text-3xl font-bold tracking-tight text-white mb-2">Professional Skills</h2>
+                    <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-2">Professional Skills</h2>
                     <div class="w-16 h-1 bg-brandBlue rounded-full"></div>
                 </div>
 
                 <div class="space-y-6">
-                    <div class="bg-brandCard p-6 rounded-2xl border border-slate-800 flex items-center gap-4">
-                        <div class="w-12 h-12 bg-blue-500/10 text-brandAccent rounded-xl flex items-center justify-center text-xl flex-shrink-0">
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex items-center gap-4">
+                        <div class="w-12 h-12 bg-blue-50 text-brandBlue rounded-xl flex items-center justify-center text-xl flex-shrink-0">
                             <i class="fa-solid fa-laptop-code"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-white text-lg">Computer Skills</h3>
-                            <p class="text-slate-400 text-sm">Practical abilities in computing, broadcasting software tools, and digital document control.</p>
+                            <h3 class="font-bold text-slate-900 text-lg">Computer Skills[cite: 1]</h3>
+                            <p class="text-slate-600 text-sm">Practical abilities in computing, broadcasting software tools, and digital document control.</p>
                         </div>
                     </div>
 
-                    <div class="bg-brandCard p-6 rounded-2xl border border-slate-800 flex items-center gap-4">
-                        <div class="w-12 h-12 bg-blue-500/10 text-brandAccent rounded-xl flex items-center justify-center text-xl flex-shrink-0">
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex items-center gap-4">
+                        <div class="w-12 h-12 bg-blue-50 text-brandBlue rounded-xl flex items-center justify-center text-xl flex-shrink-0">
                             <i class="fa-solid fa-user-gear"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-white text-lg">Leadership Skills</h3>
-                            <p class="text-slate-400 text-sm">Team coordination, mentoring students, and administrative execution.</p>
+                            <h3 class="font-bold text-slate-900 text-lg">Leadership Skills[cite: 1]</h3>
+                            <p class="text-slate-600 text-sm">Team coordination, mentoring students, and administrative execution.</p>
                         </div>
                     </div>
 
-                    <div class="bg-brandCard p-6 rounded-2xl border border-slate-800 flex items-center gap-4">
-                        <div class="w-12 h-12 bg-blue-500/10 text-brandAccent rounded-xl flex items-center justify-center text-xl flex-shrink-0">
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex items-center gap-4">
+                        <div class="w-12 h-12 bg-blue-50 text-brandBlue rounded-xl flex items-center justify-center text-xl flex-shrink-0">
                             <i class="fa-solid fa-comments"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-white text-lg">Communication Skills</h3>
-                            <p class="text-slate-400 text-sm">Advanced articulation rooted in language training and professional public engagement.</p>
+                            <h3 class="font-bold text-slate-900 text-lg">Communication Skills[cite: 1]</h3>
+                            <p class="text-slate-600 text-sm">Advanced articulation rooted in language training and professional public engagement.</p>
                         </div>
                     </div>
                 </div>
@@ -306,34 +306,34 @@
             <!-- Hobbies -->
             <div id="hobbies">
                 <div class="mb-10">
-                    <h2 class="text-3xl font-bold tracking-tight text-white mb-2">Hobbies and Interests</h2>
+                    <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-2">Hobbies and Interests</h2>
                     <div class="w-16 h-1 bg-brandBlue rounded-full"></div>
                 </div>
 
                 <div class="grid grid-cols-2 gap-4">
-                    <div class="bg-brandCard p-5 rounded-2xl border border-slate-800 flex flex-col items-center text-center">
-                        <i class="fa-solid fa-book-open text-brandAccent text-2xl mb-3"></i>
-                        <span class="font-semibold text-slate-200 text-sm">Reading Non-Fiction</span>
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-center text-center">
+                        <i class="fa-solid fa-book-open text-brandBlue text-2xl mb-3"></i>
+                        <span class="font-bold text-slate-800 text-sm">Reading Non-Fiction[cite: 1]</span>
                     </div>
-                    <div class="bg-brandCard p-5 rounded-2xl border border-slate-800 flex flex-col items-center text-center">
-                        <i class="fa-solid fa-plane-departure text-brandAccent text-2xl mb-3"></i>
-                        <span class="font-semibold text-slate-200 text-sm">Traveling</span>
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-center text-center">
+                        <i class="fa-solid fa-plane-departure text-brandBlue text-2xl mb-3"></i>
+                        <span class="font-bold text-slate-800 text-sm">Traveling[cite: 1]</span>
                     </div>
-                    <div class="bg-brandCard p-5 rounded-2xl border border-slate-800 flex flex-col items-center text-center">
-                        <i class="fa-solid fa-hands-holding-child text-brandAccent text-2xl mb-3"></i>
-                        <span class="font-semibold text-slate-200 text-sm">Serving Humanity</span>
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-center text-center">
+                        <i class="fa-solid fa-hands-holding-child text-brandBlue text-2xl mb-3"></i>
+                        <span class="font-bold text-slate-800 text-sm">Serving Humanity[cite: 1]</span>
                     </div>
-                    <div class="bg-brandCard p-5 rounded-2xl border border-slate-800 flex flex-col items-center text-center">
-                        <i class="fa-solid fa-chart-pie text-brandAccent text-2xl mb-3"></i>
-                        <span class="font-semibold text-slate-200 text-sm">Analyzing</span>
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-center text-center">
+                        <i class="fa-solid fa-chart-pie text-brandBlue text-2xl mb-3"></i>
+                        <span class="font-bold text-slate-800 text-sm">Analyzing[cite: 1]</span>
                     </div>
-                    <div class="bg-brandCard p-5 rounded-2xl border border-slate-800 flex flex-col items-center text-center">
-                        <i class="fa-solid fa-utensils text-brandAccent text-2xl mb-3"></i>
-                        <span class="font-semibold text-slate-200 text-sm">Cooking</span>
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-center text-center">
+                        <i class="fa-solid fa-utensils text-brandBlue text-2xl mb-3"></i>
+                        <span class="font-bold text-slate-800 text-sm">Cooking[cite: 1]</span>
                     </div>
-                    <div class="bg-brandCard p-5 rounded-2xl border border-slate-800 flex flex-col items-center text-center">
-                        <i class="fa-solid fa-users text-brandAccent text-2xl mb-3"></i>
-                        <span class="font-semibold text-slate-200 text-sm">Team Building</span>
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-center text-center">
+                        <i class="fa-solid fa-users text-brandBlue text-2xl mb-3"></i>
+                        <span class="font-bold text-slate-800 text-sm">Team Building[cite: 1]</span>
                     </div>
                 </div>
             </div>
@@ -342,45 +342,45 @@
     </section>
 
     <!-- Referees Section -->
-    <section id="referees" class="py-24 max-w-7xl mx-auto px-6 border-t border-slate-800/80">
+    <section id="referees" class="py-24 max-w-7xl mx-auto px-6 border-t border-slate-200">
         <div class="text-center max-w-3xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold tracking-tight text-white mb-4">Referees</h2>
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-4">Referees</h2>
             <div class="w-16 h-1 bg-brandBlue mx-auto rounded-full"></div>
-            <p class="text-slate-400 text-sm mt-2">Professional references available upon request.</p>
+            <p class="text-slate-600 text-sm mt-2">Professional references available upon request.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div class="bg-brandCard p-8 rounded-2xl border border-slate-800 flex flex-col justify-between">
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
                 <div>
-                    <h3 class="text-xl font-bold text-white">PROF. MARGARET BARASA</h3>
-                    <p class="text-brandAccent font-medium text-sm mb-4">Lecturer - Kisii university</p>
-                    <p class="text-slate-400 text-sm mb-2"><i class="fa-solid fa-location-dot mr-2 text-slate-500"></i>Address: Kisii 408-40200</p>
+                    <h3 class="text-xl font-bold text-slate-900">PROF. MARGARET BARASA[cite: 1]</h3>
+                    <p class="text-brandBlue font-semibold text-sm mb-4">Lecturer - Kisii university[cite: 1]</p>
+                    <p class="text-slate-600 text-sm mb-2"><i class="fa-solid fa-location-dot mr-2 text-slate-400"></i>Address: Kisii 408-40200[cite: 1]</p>
                 </div>
-                <div class="border-t border-slate-800 pt-4 mt-4 space-y-2 text-sm">
-                    <p class="text-slate-300 flex items-center gap-2"><i class="fa-solid fa-phone text-brandAccent"></i> 0722606101</p>
-                    <p class="text-slate-300 flex items-center gap-2"><i class="fa-solid fa-envelope text-brandAccent"></i> mbarasa23@gmai.com</p>
+                <div class="border-t border-slate-100 pt-4 mt-4 space-y-2 text-sm">
+                    <p class="text-slate-700 font-medium flex items-center gap-2"><i class="fa-solid fa-phone text-brandBlue"></i> 0722606101[cite: 1]</p>
+                    <p class="text-slate-700 font-medium flex items-center gap-2"><i class="fa-solid fa-envelope text-brandBlue"></i> mbarasa23@gmai.com[cite: 1]</p>
                 </div>
             </div>
 
-            <div class="bg-brandCard p-8 rounded-2xl border border-slate-800 flex flex-col justify-between">
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
                 <div>
-                    <h3 class="text-xl font-bold text-white">Dr Evans Gesura Mecha</h3>
-                    <p class="text-brandAccent font-medium text-sm mb-4">Lecturer - Kisii University</p>
-                    <p class="text-slate-400 text-sm mb-2"><i class="fa-solid fa-location-dot mr-2 text-slate-500"></i>Address: Kisii 408-40200</p>
+                    <h3 class="text-xl font-bold text-slate-900">Dr Evans Gesura Mecha[cite: 1]</h3>
+                    <p class="text-brandBlue font-semibold text-sm mb-4">Lecturer - Kisii University[cite: 1]</p>
+                    <p class="text-slate-600 text-sm mb-2"><i class="fa-solid fa-location-dot mr-2 text-slate-400"></i>Address: Kisii 408-40200[cite: 1]</p>
                 </div>
-                <div class="border-t border-slate-800 pt-4 mt-4 space-y-2 text-sm">
-                    <p class="text-slate-300 flex items-center gap-2"><i class="fa-solid fa-phone text-brandAccent"></i> 0706 653148</p>
-                    <p class="text-slate-300 flex items-center gap-2"><i class="fa-solid fa-envelope text-brandAccent"></i> evans-mecha@kisiiuniversity.ac.ke</p>
+                <div class="border-t border-slate-100 pt-4 mt-4 space-y-2 text-sm">
+                    <p class="text-slate-700 font-medium flex items-center gap-2"><i class="fa-solid fa-phone text-brandBlue"></i> 0706 653148[cite: 1]</p>
+                    <p class="text-slate-700 font-medium flex items-center gap-2"><i class="fa-solid fa-envelope text-brandBlue"></i> evans-mecha@kisiiuniversity.ac.ke[cite: 1]</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-slate-900/80 border-t border-slate-800">
+    <section id="contact" class="py-24 bg-slate-900 text-white border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-brandAccent text-sm font-bold uppercase tracking-wider">Connect</span>
+                <span class="text-sky-400 text-sm font-bold uppercase tracking-wider">Connect</span>
                 <h2 class="text-3xl font-bold tracking-tight text-white mt-1 mb-4">Get In Touch</h2>
                 <div class="w-16 h-1 bg-brandBlue mx-auto rounded-full"></div>
             </div>
@@ -388,53 +388,53 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
                 <div class="space-y-6">
                     <h3 class="text-2xl font-bold text-white">Contact Information</h3>
-                    <p class="text-slate-400 text-sm">Reach out directly via phone, email, or physical location.</p>
+                    <p class="text-slate-300 text-sm">Reach out directly via phone[cite: 1], email[cite: 1], or physical location[cite: 1].</p>
                     
                     <div class="space-y-4 pt-2">
                         <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-brandCard border border-slate-800 rounded-xl flex items-center justify-center text-brandAccent">
+                            <div class="w-12 h-12 bg-slate-800 border border-slate-700 rounded-xl flex items-center justify-center text-sky-400">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
                             <div>
-                                <h4 class="text-xs text-slate-400 uppercase font-semibold">Address</h4>
-                                <p class="text-sm font-medium text-slate-200">PO Box 408-40200, Kisii, Kenya</p>
+                                <h4 class="text-xs text-slate-400 uppercase font-semibold">Address[cite: 1]</h4>
+                                <p class="text-sm font-medium text-white">PO Box 408-40200, Kisii, Kenya[cite: 1]</p>
                             </div>
                         </div>
 
                         <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-brandCard border border-slate-800 rounded-xl flex items-center justify-center text-brandAccent">
+                            <div class="w-12 h-12 bg-slate-800 border border-slate-700 rounded-xl flex items-center justify-center text-sky-400">
                                 <i class="fa-solid fa-phone"></i>
                             </div>
                             <div>
-                                <h4 class="text-xs text-slate-400 uppercase font-semibold">Mobile</h4>
-                                <p class="text-sm font-medium text-slate-200">0758620207</p>
+                                <h4 class="text-xs text-slate-400 uppercase font-semibold">Mobile[cite: 1]</h4>
+                                <p class="text-sm font-medium text-white">0758620207[cite: 1]</p>
                             </div>
                         </div>
 
                         <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-brandCard border border-slate-800 rounded-xl flex items-center justify-center text-brandAccent">
+                            <div class="w-12 h-12 bg-slate-800 border border-slate-700 rounded-xl flex items-center justify-center text-sky-400">
                                 <i class="fa-solid fa-envelope"></i>
                             </div>
                             <div>
-                                <h4 class="text-xs text-slate-400 uppercase font-semibold">E-mail</h4>
-                                <p class="text-sm font-medium text-slate-200">joelwafula456@gmail.com</p>
+                                <h4 class="text-xs text-slate-400 uppercase font-semibold">E-mail[cite: 1]</h4>
+                                <p class="text-sm font-medium text-white">joelwafula456@gmail.com[cite: 1]</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <form class="bg-brandCard p-8 rounded-2xl border border-slate-800 space-y-4 shadow-xl" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent successfully.');">
+                <form class="bg-slate-800 p-8 rounded-2xl border border-slate-700 space-y-4 shadow-xl" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent successfully.');">
                     <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Name</label>
-                        <input type="text" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brandAccent transition-colors text-sm" placeholder="Your Name">
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Name</label>
+                        <input type="text" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-sky-400 transition-colors text-sm" placeholder="Your Name">
                     </div>
                     <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Email</label>
-                        <input type="email" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brandAccent transition-colors text-sm" placeholder="name@example.com">
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Email</label>
+                        <input type="email" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-sky-400 transition-colors text-sm" placeholder="name@example.com">
                     </div>
                     <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Message</label>
-                        <textarea rows="4" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brandAccent transition-colors text-sm" placeholder="Your message here..."></textarea>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Message</label>
+                        <textarea rows="4" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-sky-400 transition-colors text-sm" placeholder="Your message here..."></textarea>
                     </div>
                     <button type="submit" class="w-full bg-brandBlue hover:bg-blue-600 text-white font-semibold py-3.5 rounded-xl transition-all text-sm shadow-lg shadow-blue-500/20">
                         Send Message
@@ -445,7 +445,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black text-slate-500 py-8 border-t border-slate-900 text-center text-xs">
+    <footer class="bg-black text-slate-400 py-8 border-t border-slate-900 text-center text-xs">
         <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p>&copy; 2026 Wanyonyi Joel Wafula. All rights reserved.</p>
             <p>Optimized for Multi-Screen Devices &amp; Deployments</p>
