@@ -1,100 +1,88 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wanyonyi Joel Wafula | Professional Portfolio & CV</title>
-    <!-- Tailwind CSS for high-end responsive styling -->
+    <title>Wanyonyi Joel Wafula | Professional Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        cleanBg: '#ffffff',
-                        cleanCard: '#f8fafc',
-                        brandBlue: '#2563eb',
-                        brandDark: '#0f172a'
+                        primary: '#1e3a8a',
+                        secondary: '#0ea5e9',
+                        darkBg: '#0f172a',
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="bg-cleanBg text-slate-800 font-sans antialiased selection:bg-brandBlue selection:text-white">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-secondary selection:text-white">
 
-    <!-- Top Navigation Header -->
-    <header class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md border-b border-slate-200 z-50 transition-all">
+    <header class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="text-xl font-extrabold tracking-tight text-slate-900 flex items-center gap-2">
-                <span class="w-3 h-3 bg-brandBlue rounded-full inline-block"></span> Joel Wafula
+            <a href="#" class="text-xl font-bold tracking-tight text-primary flex items-center gap-2">
+                <i class="fa-solid fa-graduation-cap text-secondary"></i> Joel Wafula
             </a>
             
-            <!-- Desktop Nav Menu -->
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
-                <a href="#about" class="hover:text-brandBlue transition-colors">About</a>
-                <a href="#education" class="hover:text-brandBlue transition-colors">Education</a>
-                <a href="#experience" class="hover:text-brandBlue transition-colors">Experience</a>
-                <a href="#skills" class="hover:text-brandBlue transition-colors">Skills</a>
-                <a href="#hobbies" class="hover:text-brandBlue transition-colors">Hobbies</a>
-                <a href="#referees" class="hover:text-brandBlue transition-colors">Referees</a>
-                <a href="#contact" class="hover:text-brandBlue transition-colors">Contact</a>
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-slate-600">
+                <a href="#about" class="hover:text-secondary transition-colors">About</a>
+                <a href="#education" class="hover:text-secondary transition-colors">Education</a>
+                <a href="#experience" class="hover:text-secondary transition-colors">Experience</a>
+                <a href="#skills" class="hover:text-secondary transition-colors">Skills</a>
+                <a href="#hobbies" class="hover:text-secondary transition-colors">Hobbies</a>
+                <a href="#contact" class="hover:text-secondary transition-colors">Contact</a>
             </nav>
 
-            <a href="#contact" class="hidden lg:inline-block bg-brandBlue hover:bg-blue-700 text-white px-5 py-2.5 rounded-xl text-sm font-semibold shadow-lg shadow-blue-500/20 transition-all">
-                Hire Me
+            <a href="#contact" class="hidden lg:inline-block bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded-xl font-medium shadow-md shadow-primary/20 transition-all">
+                Get in Touch
             </a>
 
-            <!-- Mobile Menu Trigger -->
             <button id="menu-btn" class="md:hidden text-slate-700 focus:outline-none text-2xl">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
 
-        <!-- Mobile Drawer Menu -->
-        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white border-b border-slate-200 py-6 px-6 flex flex-col space-y-4 shadow-xl">
-            <a href="#about" class="mobile-link text-slate-700 hover:text-brandBlue font-semibold">About</a>
-            <a href="#education" class="mobile-link text-slate-700 hover:text-brandBlue font-semibold">Education</a>
-            <a href="#experience" class="mobile-link text-slate-700 hover:text-brandBlue font-semibold">Experience</a>
-            <a href="#skills" class="mobile-link text-slate-700 hover:text-brandBlue font-semibold">Skills</a>
-            <a href="#hobbies" class="mobile-link text-slate-700 hover:text-brandBlue font-semibold">Hobbies</a>
-            <a href="#referees" class="mobile-link text-slate-700 hover:text-brandBlue font-semibold">Referees</a>
-            <a href="#contact" class="mobile-link text-slate-700 hover:text-brandBlue font-semibold">Contact</a>
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white border-b border-slate-200 shadow-lg py-4 px-6 flex flex-col space-y-4">
+            <a href="#about" class="mobile-link text-slate-600 hover:text-secondary font-medium">About</a>
+            <a href="#education" class="mobile-link text-slate-600 hover:text-secondary font-medium">Education</a>
+            <a href="#experience" class="mobile-link text-slate-600 hover:text-secondary font-medium">Experience</a>
+            <a href="#skills" class="mobile-link text-slate-600 hover:text-secondary font-medium">Skills</a>
+            <a href="#hobbies" class="mobile-link text-slate-600 hover:text-secondary font-medium">Hobbies</a>
+            <a href="#contact" class="mobile-link text-slate-600 hover:text-secondary font-medium">Contact</a>
         </div>
     </header>
 
-    <!-- Hero Section with Profile Element -->
-    <section class="pt-36 pb-20 md:pt-44 md:pb-32 bg-gradient-to-b from-slate-50 via-white to-white relative overflow-hidden">
+    <section class="pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-br from-slate-900 via-primary to-slate-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
         <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-12">
             
-            <!-- Profile Image Simulation Box -->
-            <div class="w-48 h-48 md:w-64 md:h-64 rounded-3xl overflow-hidden shadow-2xl border-2 border-slate-200 bg-slate-100 flex-shrink-0 relative group flex items-center justify-center">
-                <div class="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-transparent"></div>
-                <div class="flex flex-col items-center text-slate-500 z-10">
-                    <i class="fa-solid fa-user-tie text-6xl mb-3 text-brandBlue"></i>
-                    <span class="text-xs tracking-wider uppercase font-bold text-slate-700">Wanyonyi Joel</span>
+            <div class="w-48 h-48 md:w-64 md:h-64 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20 bg-slate-800 flex-shrink-0 relative group">
+                <div class="w-full h-full flex flex-col items-center justify-center bg-slate-800 text-slate-400">
+                    <i class="fa-solid fa-user text-6xl mb-2 text-secondary"></i>
+                    <span class="text-xs uppercase tracking-wider font-semibold">Joel Wafula</span>
                 </div>
             </div>
 
-            <!-- Hero Intro Details -->
             <div class="text-center md:text-left flex-1">
-                <div class="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 text-brandBlue px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-6">
-                    <i class="fa-solid fa-graduation-cap"></i> Computational Linguistics Specialist
-                </div>
-                <h1 class="text-4xl md:text-6xl font-black tracking-tight text-slate-900 mb-4">
+                <span class="inline-block bg-secondary/20 text-secondary border border-secondary/30 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase mb-4">
+                    Versatile Professional &amp; Linguist
+                </span>
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 text-white">
                     Wanyonyi Joel Wafula
                 </h1>
-                <p class="text-base md:text-lg text-slate-600 max-w-2xl mb-8 leading-relaxed">
-                    Versatile professional with a Bachelor of Arts in English and Literature[cite: 1] (Kisii University, Second Class Upper Division[cite: 1]), currently pursuing a Master's in Linguistics[cite: 1]. Experienced across education, administration, broadcasting, and IT roles[cite: 1].
+                <p class="text-lg md:text-xl text-slate-300 max-w-2xl mb-8 leading-relaxed">
+                    Bachelor of Arts in English and Literature specializing in Computational Linguistics. Experienced across education, administration, broadcasting, and customer care.
                 </p>
                 <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                    <a href="#contact" class="bg-brandBlue hover:bg-blue-700 text-white font-semibold px-7 py-3.5 rounded-xl shadow-lg shadow-blue-600/30 transition-all flex items-center gap-2">
-                        <i class="fa-solid fa-envelope"></i> Get in Touch
+                    <a href="#contact" class="bg-secondary hover:bg-secondary/90 text-white font-semibold px-7 py-3.5 rounded-xl shadow-lg shadow-secondary/30 transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-envelope"></i> Contact Me
                     </a>
-                    <a href="#about" class="bg-slate-100 hover:bg-slate-200 border border-slate-300 text-slate-700 font-semibold px-7 py-3.5 rounded-xl transition-all flex items-center gap-2">
-                        <i class="fa-solid fa-circle-info"></i> View Profile
+                    <a href="#about" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-7 py-3.5 rounded-xl transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-arrow-down"></i> Learn More
                     </a>
                 </div>
             </div>
@@ -102,238 +90,238 @@
         </div>
     </section>
 
-    <!-- Professional Profile / About Section -->
-    <section id="about" class="py-24 max-w-7xl mx-auto px-6 border-t border-slate-200">
+    <section id="about" class="py-24 max-w-7xl mx-auto px-6">
         <div class="text-center max-w-3xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-4">Personal Profile</h2>
-            <div class="w-16 h-1 bg-brandBlue mx-auto rounded-full mb-6"></div>
-            <p class="text-slate-600 text-base leading-relaxed">
-                I am a versatile professional with a Bachelor of Arts in English and Literature, specializing in Computational Linguistics, and a diverse work experience across customer care, secretarial, receptionist, and IT roles. My strong communication, problem-solving, and organizational skills enable me to manage tasks efficiently, provide exceptional customer service, and support administrative functions[cite: 1].
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-4">Professional Profile</h2>
+            <div class="w-16 h-1.5 bg-secondary mx-auto rounded-full mb-6"></div>
+            <p class="text-slate-600 text-lg">
+                Dedicated expert delivering high-quality results in dynamic environments.
             </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-cleanCard p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
-                <div class="w-12 h-12 bg-blue-50 text-brandBlue rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
-                    <i class="fa-solid fa-book-bookmark"></i>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-secondary/10 text-secondary rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
+                    <i class="fa-solid fa-brain"></i>
                 </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-3">Academic Foundation</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">
-                    Advanced linguistic studies combined with deep competencies in instructional delivery aligned with Competence-Based Education (CBE) principles[cite: 1].
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Core Expertise</h3>
+                <p class="text-slate-600 leading-relaxed">
+                    Specialized in Computational Linguistics with strong multi-disciplinary capability spanning administrative support, IT roles, and reception functions.
                 </p>
             </div>
 
-            <div class="bg-cleanCard p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
-                <div class="w-12 h-12 bg-blue-50 text-brandBlue rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
-                    <i class="fa-solid fa-chart-line"></i>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-secondary/10 text-secondary rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
+                    <i class="fa-solid fa-bullseye"></i>
                 </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-3">Operational Support</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">
-                    Assisted lecturers in curriculum delivery, designed engaging lesson plans, customized teaching materials, and implemented interactive learning strategies[cite: 1].
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Execution &amp; Detail</h3>
+                <p class="text-slate-600 leading-relaxed">
+                    Equipped with a keen eye for detail and a proactive approach, ensuring smooth operations, positive client interactions, and efficient daily management.
                 </p>
             </div>
 
-            <div class="bg-cleanCard p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
-                <div class="w-12 h-12 bg-blue-50 text-brandBlue rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
-                    <i class="fa-solid fa-people-arrows"></i>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-secondary/10 text-secondary rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
+                    <i class="fa-solid fa-chalkboard-user"></i>
                 </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-3">Dynamic Execution</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">
-                    With a keen eye for detail and proactive approach, I thrive in dynamic environments, ensuring smooth administrative operations and positive client experiences[cite: 1].
+                <h3 class="text-xl font-bold text-slate-900 mb-3">CBE &amp; Teaching</h3>
+                <p class="text-slate-600 leading-relaxed">
+                    Skilled in Competence-Based Education (CBE) principles, creating customized teaching materials, and implementing interactive learning strategies.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="py-24 bg-slate-50 border-t border-slate-200">
+    <section id="education" class="py-24 bg-slate-100 border-y border-slate-200">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-4">Educational History</h2>
-                <div class="w-16 h-1 bg-brandBlue mx-auto rounded-full"></div>
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-4">Educational Background</h2>
+                <div class="w-16 h-1.5 bg-secondary mx-auto rounded-full"></div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm relative">
-                    <span class="absolute top-6 right-6 bg-blue-50 text-brandBlue text-xs font-bold px-3 py-1 rounded-full">2025 Sept to Date[cite: 1]</span>
-                    <h3 class="text-xl font-bold text-slate-900 mb-1">Masters in Linguistics[cite: 1]</h3>
-                    <p class="text-brandBlue font-semibold text-sm mb-3">Kisii University[cite: 1]</p>
-                    <p class="text-slate-600 text-sm">Advanced post-graduate specializations in structural and applied linguistic principles.</p>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/60 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-secondary/10 text-secondary px-4 py-1.5 rounded-bl-2xl text-xs font-bold">
+                        2025 Sept to Date
+                    </div>
+                    <span class="text-secondary font-semibold text-sm">Kisii University</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1 mb-2">Masters in Linguistics</h3>
+                    <p class="text-slate-600 text-sm">Advanced postgraduate studies focusing on specialized linguistic analysis and theory.</p>
                 </div>
 
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm relative">
-                    <span class="absolute top-6 right-6 bg-blue-50 text-brandBlue text-xs font-bold px-3 py-1 rounded-full">2020-2024[cite: 1]</span>
-                    <h3 class="text-xl font-bold text-slate-900 mb-1">Bachelors of Arts (English, Literature &amp; History)[cite: 1]</h3>
-                    <p class="text-brandBlue font-semibold text-sm mb-1">Kisii University[cite: 1]</p>
-                    <p class="text-slate-700 text-xs font-bold mb-2">Second Class Upper Division[cite: 1]</p>
-                    <p class="text-slate-600 text-sm">Comprehensive multi-disciplinary arts program focusing on modern literary frameworks and computational applications.</p>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/60 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-secondary/10 text-secondary px-4 py-1.5 rounded-bl-2xl text-xs font-bold">
+                        2020-2024
+                    </div>
+                    <span class="text-secondary font-semibold text-sm">Kisii University</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1 mb-2">Bachelor of Arts (English, Literature &amp; History)</h3>
+                    <p class="text-slate-600 text-sm font-medium mb-1">Second Class Upper Division</p>
+                    <p class="text-slate-600 text-sm">Comprehensive grounding in language arts, computational linguistics, and human history.</p>
                 </div>
 
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm relative">
-                    <span class="absolute top-6 right-6 bg-slate-100 text-slate-700 text-xs font-bold px-3 py-1 rounded-full">2015-2019[cite: 1]</span>
-                    <h3 class="text-xl font-bold text-slate-900 mb-1">Kenya Certificate of Secondary Education[cite: 1]</h3>
-                    <p class="text-slate-600 font-semibold text-sm mb-3">Namwela High School[cite: 1]</p>
-                    <p class="text-slate-600 text-sm">Foundational secondary education completion.</p>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/60 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-slate-100 text-slate-600 px-4 py-1.5 rounded-bl-2xl text-xs font-bold">
+                        2015-2019
+                    </div>
+                    <span class="text-slate-500 font-semibold text-sm">Namwela High School</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1 mb-2">Kenya Certificate of Secondary Education</h3>
+                    <p class="text-slate-600 text-sm">High school foundational education completion.</p>
                 </div>
 
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm relative">
-                    <span class="absolute top-6 right-6 bg-slate-100 text-slate-700 text-xs font-bold px-3 py-1 rounded-full">2005-2014[cite: 1]</span>
-                    <h3 class="text-xl font-bold text-slate-900 mb-1">Kenya Certificate of Primary Education[cite: 1]</h3>
-                    <p class="text-slate-600 font-semibold text-sm mb-3">Palm Tree Academy Primary[cite: 1]</p>
-                    <p class="text-slate-600 text-sm">Primary level education milestone.</p>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/60 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-slate-100 text-slate-600 px-4 py-1.5 rounded-bl-2xl text-xs font-bold">
+                        2005-2014
+                    </div>
+                    <span class="text-slate-500 font-semibold text-sm">Palm Tree Academy Primary</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1 mb-2">Kenya Certificate of Primary Education</h3>
+                    <p class="text-slate-600 text-sm">Primary school certificate foundation.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Work Experience Section -->
-    <section id="experience" class="py-24 max-w-7xl mx-auto px-6 border-t border-slate-200">
+    <section id="experience" class="py-24 max-w-7xl mx-auto px-6">
         <div class="text-center max-w-3xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-4">Work Experience</h2>
-            <div class="w-16 h-1 bg-brandBlue mx-auto rounded-full"></div>
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-4">Professional Experience</h2>
+            <div class="w-16 h-1.5 bg-secondary mx-auto rounded-full"></div>
         </div>
 
         <div class="max-w-4xl mx-auto space-y-8">
-            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col md:flex-row gap-6">
+            
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col md:flex-row gap-6">
                 <div class="md:w-1/3">
-                    <span class="inline-block bg-blue-50 text-brandBlue text-xs font-bold px-3 py-1 rounded-full mb-2">2025 to Date[cite: 1]</span>
-                    <h3 class="text-lg font-bold text-slate-900">Teaching[cite: 1]</h3>
-                    <p class="text-sm font-semibold text-slate-600">Olowang mission school[cite: 1]</p>
+                    <span class="inline-block bg-primary/10 text-primary font-semibold text-xs px-3 py-1 rounded-full mb-2">2025 to Date</span>
+                    <h3 class="text-lg font-bold text-slate-900">Teaching &amp; Administration</h3>
+                    <p class="text-sm text-slate-500">Olowang Mission School</p>
                 </div>
-                <div class="md:w-2/3 border-t md:border-t-0 md:border-l border-slate-200 pt-4 md:pt-0 md:pl-6">
-                    <ul class="space-y-2 text-slate-700 text-sm">
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Dedicated teacher for primary students[cite: 1].</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Efficient administrator managing daily operations[cite: 1].</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Effective mentor guiding student growth[cite: 1].</li>
+                <div class="md:w-2/3 border-t md:border-t-0 md:border-l border-slate-100 pt-4 md:pt-0 md:pl-6">
+                    <ul class="space-y-2 text-slate-600 text-sm">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-secondary mt-1"></i> Dedicated teacher for primary students.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-secondary mt-1"></i> Efficient administrator managing daily operations.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-secondary mt-1"></i> Effective mentor guiding student growth.</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col md:flex-row gap-6">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col md:flex-row gap-6">
                 <div class="md:w-1/3">
-                    <span class="inline-block bg-blue-50 text-brandBlue text-xs font-bold px-3 py-1 rounded-full mb-2">Aug-Dec 2024[cite: 1]</span>
-                    <h3 class="text-lg font-bold text-slate-900">Teaching CBC[cite: 1]</h3>
-                    <p class="text-sm font-semibold text-slate-600">Kisii University[cite: 1]</p>
+                    <span class="inline-block bg-primary/10 text-primary font-semibold text-xs px-3 py-1 rounded-full mb-2">Aug-Dec 2024</span>
+                    <h3 class="text-lg font-bold text-slate-900">Teaching CBC</h3>
+                    <p class="text-sm text-slate-500">Kisii University</p>
                 </div>
-                <div class="md:w-2/3 border-t md:border-t-0 md:border-l border-slate-200 pt-4 md:pt-0 md:pl-6">
-                    <ul class="space-y-2 text-slate-700 text-sm">
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Assisted in CBC delivery[cite: 1].</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Designed engaging lesson plans[cite: 1].</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Developed customized teaching materials[cite: 1].</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Implemented interactive learning strategies[cite: 1].</li>
+                <div class="md:w-2/3 border-t md:border-t-0 md:border-l border-slate-100 pt-4 md:pt-0 md:pl-6">
+                    <ul class="space-y-2 text-slate-600 text-sm">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-secondary mt-1"></i> Assisted lecturers in comprehensive CBC delivery.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-secondary mt-1"></i> Designed engaging lesson plans &amp; customized teaching materials.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-secondary mt-1"></i> Implemented interactive learning strategies.</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col md:flex-row gap-6">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col md:flex-row gap-6">
                 <div class="md:w-1/3">
-                    <span class="inline-block bg-blue-50 text-brandBlue text-xs font-bold px-3 py-1 rounded-full mb-2">May-Aug 2024[cite: 1]</span>
-                    <h3 class="text-lg font-bold text-slate-900">Editor[cite: 1]</h3>
-                    <p class="text-sm font-semibold text-slate-600">Hot TV[cite: 1]</p>
+                    <span class="inline-block bg-primary/10 text-primary font-semibold text-xs px-3 py-1 rounded-full mb-2">May-Aug 2024</span>
+                    <h3 class="text-lg font-bold text-slate-900">Editor</h3>
+                    <p class="text-sm text-slate-500">Hot TV</p>
                 </div>
-                <div class="md:w-2/3 border-t md:border-t-0 md:border-l border-slate-200 pt-4 md:pt-0 md:pl-6">
-                    <ul class="space-y-2 text-slate-700 text-sm">
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Footage Review and Selection[cite: 1].</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Typing and editing broadcasts[cite: 1].</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Filing[cite: 1].</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Video and Audio Editing[cite: 1].</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Continuity and Flow Management[cite: 1].</li>
+                <div class="md:w-2/3 border-t md:border-t-0 md:border-l border-slate-100 pt-4 md:pt-0 md:pl-6">
+                    <ul class="space-y-2 text-slate-600 text-sm">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-secondary mt-1"></i> Footage review, selection, typing, and editing broadcasts.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-secondary mt-1"></i> Filing and documentation tasks.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-secondary mt-1"></i> Video and audio editing with strong continuity and flow management.</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col md:flex-row gap-6">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col md:flex-row gap-6">
                 <div class="md:w-1/3">
-                    <span class="inline-block bg-blue-50 text-brandBlue text-xs font-bold px-3 py-1 rounded-full mb-2">May-August 2023[cite: 1]</span>
-                    <h3 class="text-lg font-bold text-slate-900">Volunteer Tutor[cite: 1]</h3>
-                    <p class="text-sm font-semibold text-slate-600">Nyanchwa Boys High school[cite: 1]</p>
+                    <span class="inline-block bg-primary/10 text-primary font-semibold text-xs px-3 py-1 rounded-full mb-2">May-Aug 2023</span>
+                    <h3 class="text-lg font-bold text-slate-900">Volunteer Tutor</h3>
+                    <p class="text-sm text-slate-500">Nyanchwa Boys High School</p>
                 </div>
-                <div class="md:w-2/3 border-t md:border-t-0 md:border-l border-slate-200 pt-4 md:pt-0 md:pl-6">
-                    <ul class="space-y-2 text-slate-700 text-sm">
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Mentored English literature students[cite: 1].</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Created effective lesson plans[cite: 1].</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-brandBlue mt-1"></i> Facilitated engaging group discussions[cite: 1].</li>
+                <div class="md:w-2/3 border-t md:border-t-0 md:border-l border-slate-100 pt-4 md:pt-0 md:pl-6">
+                    <ul class="space-y-2 text-slate-600 text-sm">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-secondary mt-1"></i> Mentored English literature students and created effective lesson plans.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-secondary mt-1"></i> Facilitated engaging group discussions to enrich learning outcomes.</li>
                     </ul>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <!-- Skills & Hobbies Combined Section -->
-    <section id="skills" class="py-24 bg-slate-50 border-t border-slate-200">
+    <section id="skills" class="py-24 bg-slate-100 border-y border-slate-200">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16">
             
-            <!-- Skills -->
             <div>
                 <div class="mb-10">
                     <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-2">Professional Skills</h2>
-                    <div class="w-16 h-1 bg-brandBlue rounded-full"></div>
+                    <div class="w-16 h-1.5 bg-secondary rounded-full"></div>
                 </div>
 
                 <div class="space-y-6">
-                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex items-center gap-4">
-                        <div class="w-12 h-12 bg-blue-50 text-brandBlue rounded-xl flex items-center justify-center text-xl flex-shrink-0">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/60 flex items-center gap-4">
+                        <div class="w-12 h-12 bg-secondary/10 text-secondary rounded-xl flex items-center justify-center text-xl flex-shrink-0">
                             <i class="fa-solid fa-laptop-code"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-slate-900 text-lg">Computer Skills[cite: 1]</h3>
-                            <p class="text-slate-600 text-sm">Practical abilities in computing, broadcasting software tools, and digital document control.</p>
+                            <h3 class="font-bold text-slate-900 text-lg">Computer Skills</h3>
+                            <p class="text-slate-600 text-sm">Proficient in modern software, IT support, typing, and digital content management.</p>
                         </div>
                     </div>
 
-                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex items-center gap-4">
-                        <div class="w-12 h-12 bg-blue-50 text-brandBlue rounded-xl flex items-center justify-center text-xl flex-shrink-0">
-                            <i class="fa-solid fa-user-gear"></i>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/60 flex items-center gap-4">
+                        <div class="w-12 h-12 bg-secondary/10 text-secondary rounded-xl flex items-center justify-center text-xl flex-shrink-0">
+                            <i class="fa-solid fa-users-gear"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-slate-900 text-lg">Leadership Skills[cite: 1]</h3>
-                            <p class="text-slate-600 text-sm">Team coordination, mentoring students, and administrative execution.</p>
+                            <h3 class="font-bold text-slate-900 text-lg">Leadership Skills</h3>
+                            <p class="text-slate-600 text-sm">Demonstrated capability in team coordination, administration, and student mentorship.</p>
                         </div>
                     </div>
 
-                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex items-center gap-4">
-                        <div class="w-12 h-12 bg-blue-50 text-brandBlue rounded-xl flex items-center justify-center text-xl flex-shrink-0">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/60 flex items-center gap-4">
+                        <div class="w-12 h-12 bg-secondary/10 text-secondary rounded-xl flex items-center justify-center text-xl flex-shrink-0">
                             <i class="fa-solid fa-comments"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-slate-900 text-lg">Communication Skills[cite: 1]</h3>
-                            <p class="text-slate-600 text-sm">Advanced articulation rooted in language training and professional public engagement.</p>
+                            <h3 class="font-bold text-slate-900 text-lg">Communication Skills</h3>
+                            <p class="text-slate-600 text-sm">Strong interpersonal, written, and verbal communication abilities backed by a linguistic background.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Hobbies -->
             <div id="hobbies">
                 <div class="mb-10">
-                    <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-2">Hobbies and Interests</h2>
-                    <div class="w-16 h-1 bg-brandBlue rounded-full"></div>
+                    <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-2">Hobbies &amp; Interests</h2>
+                    <div class="w-16 h-1.5 bg-secondary rounded-full"></div>
                 </div>
 
                 <div class="grid grid-cols-2 gap-4">
-                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-center text-center">
-                        <i class="fa-solid fa-book-open text-brandBlue text-2xl mb-3"></i>
-                        <span class="font-bold text-slate-800 text-sm">Reading Non-Fiction[cite: 1]</span>
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/60 flex flex-col items-center text-center">
+                        <i class="fa-solid fa-book-open text-secondary text-2xl mb-3"></i>
+                        <span class="font-semibold text-slate-800 text-sm">Reading Non-Fiction</span>
                     </div>
-                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-center text-center">
-                        <i class="fa-solid fa-plane-departure text-brandBlue text-2xl mb-3"></i>
-                        <span class="font-bold text-slate-800 text-sm">Traveling[cite: 1]</span>
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/60 flex flex-col items-center text-center">
+                        <i class="fa-solid fa-plane text-secondary text-2xl mb-3"></i>
+                        <span class="font-semibold text-slate-800 text-sm">Traveling</span>
                     </div>
-                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-center text-center">
-                        <i class="fa-solid fa-hands-holding-child text-brandBlue text-2xl mb-3"></i>
-                        <span class="font-bold text-slate-800 text-sm">Serving Humanity[cite: 1]</span>
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/60 flex flex-col items-center text-center">
+                        <i class="fa-solid fa-hand-holding-heart text-secondary text-2xl mb-3"></i>
+                        <span class="font-semibold text-slate-800 text-sm">Serving Humanity</span>
                     </div>
-                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-center text-center">
-                        <i class="fa-solid fa-chart-pie text-brandBlue text-2xl mb-3"></i>
-                        <span class="font-bold text-slate-800 text-sm">Analyzing[cite: 1]</span>
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/60 flex flex-col items-center text-center">
+                        <i class="fa-solid fa-magnifying-glass-chart text-secondary text-2xl mb-3"></i>
+                        <span class="font-semibold text-slate-800 text-sm">Analyzing</span>
                     </div>
-                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-center text-center">
-                        <i class="fa-solid fa-utensils text-brandBlue text-2xl mb-3"></i>
-                        <span class="font-bold text-slate-800 text-sm">Cooking[cite: 1]</span>
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/60 flex flex-col items-center text-center">
+                        <i class="fa-solid fa-utensils text-secondary text-2xl mb-3"></i>
+                        <span class="font-semibold text-slate-800 text-sm">Cooking</span>
                     </div>
-                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-center text-center">
-                        <i class="fa-solid fa-users text-brandBlue text-2xl mb-3"></i>
-                        <span class="font-bold text-slate-800 text-sm">Team Building[cite: 1]</span>
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/60 flex flex-col items-center text-center">
+                        <i class="fa-solid fa-people-group text-secondary text-2xl mb-3"></i>
+                        <span class="font-semibold text-slate-800 text-sm">Team Building</span>
                     </div>
                 </div>
             </div>
@@ -341,102 +329,100 @@
         </div>
     </section>
 
-    <!-- Referees Section -->
-    <section id="referees" class="py-24 max-w-7xl mx-auto px-6 border-t border-slate-200">
+    <section class="py-24 max-w-7xl mx-auto px-6">
         <div class="text-center max-w-3xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-4">Referees</h2>
-            <div class="w-16 h-1 bg-brandBlue mx-auto rounded-full"></div>
-            <p class="text-slate-600 text-sm mt-2">Professional references available upon request.</p>
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-4">Professional Referees</h2>
+            <div class="w-16 h-1.5 bg-secondary mx-auto rounded-full"></div>
+            <p class="text-slate-600 text-base mt-2">Trusted academic mentors available for professional recommendations.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
                 <div>
-                    <h3 class="text-xl font-bold text-slate-900">PROF. MARGARET BARASA[cite: 1]</h3>
-                    <p class="text-brandBlue font-semibold text-sm mb-4">Lecturer - Kisii university[cite: 1]</p>
-                    <p class="text-slate-600 text-sm mb-2"><i class="fa-solid fa-location-dot mr-2 text-slate-400"></i>Address: Kisii 408-40200[cite: 1]</p>
+                    <h3 class="text-xl font-bold text-slate-900">Prof. Margaret Barasa</h3>
+                    <p class="text-secondary font-medium text-sm mb-4">Lectector - Kisii University</p>
+                    <p class="text-slate-500 text-sm mb-2"><i class="fa-solid fa-location-dot mr-2 text-slate-400"></i>Address: Kisii 408-40200</p>
                 </div>
                 <div class="border-t border-slate-100 pt-4 mt-4 space-y-2 text-sm">
-                    <p class="text-slate-700 font-medium flex items-center gap-2"><i class="fa-solid fa-phone text-brandBlue"></i> 0722606101[cite: 1]</p>
-                    <p class="text-slate-700 font-medium flex items-center gap-2"><i class="fa-solid fa-envelope text-brandBlue"></i> mbarasa23@gmai.com[cite: 1]</p>
+                    <p class="text-slate-600 flex items-center gap-2"><i class="fa-solid fa-phone text-secondary"></i> 0722606101</p>
+                    <p class="text-slate-600 flex items-center gap-2"><i class="fa-solid fa-envelope text-secondary"></i> mbarasa23@gmai.com</p>
                 </div>
             </div>
 
-            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
                 <div>
-                    <h3 class="text-xl font-bold text-slate-900">Dr Evans Gesura Mecha[cite: 1]</h3>
-                    <p class="text-brandBlue font-semibold text-sm mb-4">Lecturer - Kisii University[cite: 1]</p>
-                    <p class="text-slate-600 text-sm mb-2"><i class="fa-solid fa-location-dot mr-2 text-slate-400"></i>Address: Kisii 408-40200[cite: 1]</p>
+                    <h3 class="text-xl font-bold text-slate-900">Dr. Evans Gesura Mecha</h3>
+                    <p class="text-secondary font-medium text-sm mb-4">Lecturer - Kisii University</p>
+                    <p class="text-slate-500 text-sm mb-2"><i class="fa-solid fa-location-dot mr-2 text-slate-400"></i>Address: Kisii 408-40200</p>
                 </div>
                 <div class="border-t border-slate-100 pt-4 mt-4 space-y-2 text-sm">
-                    <p class="text-slate-700 font-medium flex items-center gap-2"><i class="fa-solid fa-phone text-brandBlue"></i> 0706 653148[cite: 1]</p>
-                    <p class="text-slate-700 font-medium flex items-center gap-2"><i class="fa-solid fa-envelope text-brandBlue"></i> evans-mecha@kisiiuniversity.ac.ke[cite: 1]</p>
+                    <p class="text-slate-600 flex items-center gap-2"><i class="fa-solid fa-phone text-secondary"></i> 0706 653148</p>
+                    <p class="text-slate-600 flex items-center gap-2"><i class="fa-solid fa-envelope text-secondary"></i> evans-mecha@kisiiuniversity.ac.ke</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-slate-900 text-white border-t border-slate-200">
+    <section id="contact" class="py-24 bg-slate-900 text-white relative">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-sky-400 text-sm font-bold uppercase tracking-wider">Connect</span>
-                <h2 class="text-3xl font-bold tracking-tight text-white mt-1 mb-4">Get In Touch</h2>
-                <div class="w-16 h-1 bg-brandBlue mx-auto rounded-full"></div>
+                <span class="text-secondary text-sm font-semibold uppercase tracking-wider">Get In Touch</span>
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white mt-2 mb-4">Let's Work Together</h2>
+                <div class="w-16 h-1.5 bg-secondary mx-auto rounded-full"></div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
                 <div class="space-y-6">
                     <h3 class="text-2xl font-bold text-white">Contact Information</h3>
-                    <p class="text-slate-300 text-sm">Reach out directly via phone[cite: 1], email[cite: 1], or physical location[cite: 1].</p>
+                    <p class="text-slate-400">Feel free to reach out for professional opportunities, consultations, or collaborations.</p>
                     
                     <div class="space-y-4 pt-2">
                         <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-slate-800 border border-slate-700 rounded-xl flex items-center justify-center text-sky-400">
+                            <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-secondary text-lg">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
                             <div>
-                                <h4 class="text-xs text-slate-400 uppercase font-semibold">Address[cite: 1]</h4>
-                                <p class="text-sm font-medium text-white">PO Box 408-40200, Kisii, Kenya[cite: 1]</p>
+                                <h4 class="text-xs text-slate-400 uppercase tracking-wider">Location</h4>
+                                <p class="font-medium text-white">PO Box 408-40200, Kisii, Kenya</p>
                             </div>
                         </div>
 
                         <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-slate-800 border border-slate-700 rounded-xl flex items-center justify-center text-sky-400">
+                            <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-secondary text-lg">
                                 <i class="fa-solid fa-phone"></i>
                             </div>
                             <div>
-                                <h4 class="text-xs text-slate-400 uppercase font-semibold">Mobile[cite: 1]</h4>
-                                <p class="text-sm font-medium text-white">0758620207[cite: 1]</p>
+                                <h4 class="text-xs text-slate-400 uppercase tracking-wider">Phone</h4>
+                                <p class="font-medium text-white">0758620207</p>
                             </div>
                         </div>
 
                         <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-slate-800 border border-slate-700 rounded-xl flex items-center justify-center text-sky-400">
+                            <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-secondary text-lg">
                                 <i class="fa-solid fa-envelope"></i>
                             </div>
                             <div>
-                                <h4 class="text-xs text-slate-400 uppercase font-semibold">E-mail[cite: 1]</h4>
-                                <p class="text-sm font-medium text-white">joelwafula456@gmail.com[cite: 1]</p>
+                                <h4 class="text-xs text-slate-400 uppercase tracking-wider">Email</h4>
+                                <p class="font-medium text-white">joelwafula456@gmail.com</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <form class="bg-slate-800 p-8 rounded-2xl border border-slate-700 space-y-4 shadow-xl" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent successfully.');">
+                <form class="bg-slate-800 p-8 rounded-2xl border border-slate-700 space-y-4 shadow-xl" onsubmit="event.preventDefault(); alert('Thank you for reaching out! Message successfully sent.');">
                     <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Name</label>
-                        <input type="text" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-sky-400 transition-colors text-sm" placeholder="Your Name">
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Your Name</label>
+                        <input type="text" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-secondary transition-colors" placeholder="John Doe">
                     </div>
                     <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Email</label>
-                        <input type="email" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-sky-400 transition-colors text-sm" placeholder="name@example.com">
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Your Email</label>
+                        <input type="email" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-secondary transition-colors" placeholder="johndoe@example.com">
                     </div>
                     <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Message</label>
-                        <textarea rows="4" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-sky-400 transition-colors text-sm" placeholder="Your message here..."></textarea>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Message</label>
+                        <textarea rows="4" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-secondary transition-colors" placeholder="Hello Joel, I'd like to discuss..."></textarea>
                     </div>
-                    <button type="submit" class="w-full bg-brandBlue hover:bg-blue-600 text-white font-semibold py-3.5 rounded-xl transition-all text-sm shadow-lg shadow-blue-500/20">
+                    <button type="submit" class="w-full bg-secondary hover:bg-secondary/90 text-white font-semibold py-3.5 rounded-xl shadow-lg shadow-secondary/30 transition-all">
                         Send Message
                     </button>
                 </form>
@@ -444,15 +430,13 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-black text-slate-400 py-8 border-t border-slate-900 text-center text-xs">
+    <footer class="bg-slate-950 text-slate-400 py-8 border-t border-slate-900 text-center text-sm">
         <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p>&copy; 2026 Wanyonyi Joel Wafula. All rights reserved.</p>
-            <p>Optimized for Multi-Screen Devices &amp; Deployments</p>
+            <p class="text-xs text-slate-500">Designed for Multi-Device Screen Support</p>
         </div>
     </footer>
 
-    <!-- Interactive Navigation Control Script -->
     <script>
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
